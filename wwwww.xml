@@ -1,0 +1,7 @@
+<suite name="Suite1">
+	<test name="fb">
+		<classes>
+			<class name="mike.attTest.FaceBookLogInTest"/>
+		</classes>
+	</test>
+</suite>
