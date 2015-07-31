@@ -38,7 +38,7 @@ public class FaceBookLogInTest {
 		objlogin = new MainPage(driver);
 		String loginPageTitle = objlogin.getLoginTitle();
 		System.out.println(loginPageTitle);
-		userHome=objlogin.LoginToFaceBook("", "");
+		userHome=objlogin.LoginToFaceBook(username, password);
 		userHome.verifyUserHomePage();
 		userHome.LogOut();
 	}
@@ -51,7 +51,7 @@ public class FaceBookLogInTest {
 	@Test
 	public void unsuccessfulLoginTest()
 	{
-		unLogIn =objlogin.UnsuccessfulLogin("jj", "mo");
+		unLogIn =objlogin.UnsuccessfulLogin(username, pass);
 		unLogIn.verifyOnInccorectLoginPage();
 	}
 	
