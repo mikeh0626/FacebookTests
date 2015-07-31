@@ -38,7 +38,7 @@ public class FaceBookLogInTest {
 		objlogin = new MainPage(driver);
 		String loginPageTitle = objlogin.getLoginTitle();
 		System.out.println(loginPageTitle);
-		userHome=objlogin.LoginToFaceBook("mikeh0626@gmail.com", "T@rzan92");
+		userHome=objlogin.LoginToFaceBook("", "");
 		userHome.verifyUserHomePage();
 		userHome.LogOut();
 	}
